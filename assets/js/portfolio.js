@@ -83,8 +83,14 @@ $(window).on("load", function() {
 // CV download function
 function downloadCV() {
     var link = document.createElement('a');
-    link.href = 'assets\Faizan_Muthaliff_Resume.pdf';
+    link.href = 'Portfolio_website/assets/Faizan_Muthaliff_Resume.pdf';
     link.download = 'Faizan_Muthaliff_Resume.pdf';
+
+    link.onerror = function() {
+        console.error('Error: The file could not be downloaded.');
+        alert('Sorry, the CV file is currently unavailable. Please try again later.');
+    };
+    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
