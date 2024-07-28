@@ -79,3 +79,13 @@ $(window).on("load", function() {
       }), !1
   });
 });
+
+// CV download function
+function downloadCV() {
+    var link = document.createElement('a');
+    link.href = 'assets\Faizan_Muthaliff_Resume.pdf';
+    link.download = 'Faizan_Muthaliff_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}

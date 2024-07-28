@@ -23,7 +23,7 @@
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Faizan Muthaliff</h1>
                 <h6 class="header-mono" >Software Engineer | ML Engineer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <button class="btn btn-primary btn-rounded" onclick="downloadCV()"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
@@ -35,7 +35,7 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home page</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
@@ -56,7 +56,7 @@
                         <a href="#soft-skills" class="nav-link">Soft Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">My Projects</a>
+                        <a href="#portfolio" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="#side-quests" class="nav-link">Side Quests</a>
@@ -72,7 +72,7 @@
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">Innovator. Problem-Solver. Team Player.</h5>
                 <p class="mt-20">As a passionate Computer Science student with a solid programming foundation, I blend technical expertise with leadership experience. My hands-on workplace experience has sharpened my problem-solving skills and communication abilities. Eager to bring my diverse skill set and proven leadership to a dynamic team, I'm ready to make a meaningful impact.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <button class="btn btn-outline-danger" onclick="downloadCV()"><i class="icon-down-circled2 "></i>Download My CV</button>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -513,7 +513,7 @@
                 <div class="image-container active">
                     <img src="assets/imgs/Cutting_edge_explaining.jpg" alt="Image 1" class="carousel-image active">
                     <div class="overlay">
-                        <div class="text-holder">
+                        <div class="carousel-text">
                             <h2 class="title"><b>Presented at Cutting Edge Tech Expo</b></h2>
                             <p class="subtitle">I was able to demonstrate and present my Final Year Project Application to Companies and students alike at the 2024 Cutting Edge Tech Expo.</p>
                         </div>            
@@ -522,7 +522,7 @@
                 <div class="image-container">
                     <img src="assets/imgs/ICARC_certificate.jpg" alt="Image 2" class="carousel-image">
                     <div class="overlay">
-                        <div class="text-holder">
+                        <div class="carousel-text">
                             <h2 class="title"><b>Published Research Paper to IEEE</b></h2>
                             <p class="subtitle">I was further able to publish a research paper titled Exploring Computational Linguistics Techniques for Enhanced Outing Planning A Comprehensive Review at ICARC 2024</p>
                         </div>       
@@ -531,7 +531,7 @@
                 <div class="image-container">
                     <img src="assets/imgs/FMrunning.jpg" alt="Image 3" class="carousel-image">
                     <div class="overlay">
-                        <div class="text-holder">
+                        <div class="carousel-text">
                             <h2 class="title"><b>Mercentile Athletic Meet 2022</b></h2>
                             <p class="subtitle">Represented CodeGen International (Pvt) Ltd in the 2022 Mercantile Athletic Meet and Achieved 2 Gold Medals and 1 Bronze Medal.</p>
                         </div>     
@@ -540,7 +540,7 @@
                 <div class="image-container">
                     <img src="assets/imgs/Group_collage.jpg" alt="Image 4" class="carousel-image">
                     <div class="overlay">
-                        <div class="text-holder">
+                        <div class="carousel-text">
                             <h2 class="title"><b>Keeping it Lively!</b></h2>
                             <p class="subtitle">Solid, tangible achievements are nice and all but sometimes taking part in activities and getting to know the people around the workplace can be the most rewarding.</p>
                         </div>     
@@ -549,15 +549,15 @@
                 <div class="image-container">
                     <img src="assets/imgs/Beatboxing.jpg" alt="Image 4" class="carousel-image">
                     <div class="overlay">
-                        <div class="text-holder">
+                        <div class="carousel-text">
                             <h2 class="title"><b>Hobbies and Downtime</b></h2>
                             <p class="subtitle">When I'm not diving into the latest tech trends or staying active, you can find me beatboxing. I've performed at various events, and it's my go-to party trick for adding a dash of fun to any gathering!</p>
                         </div>     
                     </div>
                 </div>
             </div>
-            <button class="carousel-button prev">&lt;</button>
-            <button class="carousel-button next">&gt;</button>
+            <button class="carousel-button prev">◀</button>
+            <button class="carousel-button next">▶</button>
           </div>
         </div>
     </section>
