@@ -11685,7 +11685,7 @@ pre .code {
 
 .carousel-container {
   position: relative;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -11711,8 +11711,8 @@ pre .code {
 }
 
 .carousel-button {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: linear-gradient(to bottom, #ffffff, #f0f0f0);
   color: black;
@@ -11745,10 +11745,11 @@ pre .code {
 
 .image-container {
   position: relative;
-  width: 600px;  /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
+  width: 800px;  
+  height: 500px; 
   overflow: hidden;
   display: none;
+  margin: 0 auto;
 }
 
 .image-container.active {
