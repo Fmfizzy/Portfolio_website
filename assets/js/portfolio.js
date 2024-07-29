@@ -83,7 +83,7 @@ $(window).on("load", function() {
 // CV download function
 function downloadCV() {
     var link = document.createElement('a');
-    link.href = 'Portfolio_website/assets/Faizan_Muthaliff_Resume.pdf';
+    link.href = 'https://fmfizzy.github.io/Portfolio_website/assets/Faizan_Muthaliff_Resume.pdf';
     link.download = 'Faizan_Muthaliff_Resume.pdf';
 
     link.onerror = function() {
