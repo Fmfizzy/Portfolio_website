@@ -11881,6 +11881,6 @@ pre .code {
 @media screen and (max-width: 600px) {
   .popup-content {
       width: 95%;
-      margin: 5% auto;
+      margin: 15% auto;
   }
 }
