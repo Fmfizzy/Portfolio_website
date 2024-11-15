@@ -11522,6 +11522,7 @@ pre .code {
 .header .header-content .header-subtitle {
   font-weight: 200;
   font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+  padding-left: 4px;
 }
 
 .header .header-content .header-title {
@@ -11537,6 +11538,7 @@ pre .code {
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
+  padding-left: 6px;
 }
 
 @media (max-width: 767.98px) {
@@ -11872,3 +11874,11 @@ pre .code {
       margin: 15% auto;
   }
 }
+
+#typing-text {
+  border-right: 2px solid #333;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+

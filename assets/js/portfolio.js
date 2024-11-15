@@ -157,3 +157,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+//Header animation
+const textArray = ["Software Engineer", "Full-Stack Developer", "Data Science Enthusiast"];
+const typingSpeed = 100;
+const erasingSpeed = 50;
+const newTextDelay = 1500;
+let textArrayIndex = 0;
+let charIndex = 0;
+
+const typingTextElement = document.getElementById("typing-text");
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    typingTextElement.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typingTextElement.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, erasingSpeed);
+  } else {
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingSpeed + 500);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(type, 1200); // Start typing after the slide-in animation
+});
+
